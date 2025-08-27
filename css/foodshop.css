@@ -1,0 +1,163 @@
+* รีเซ็ตค่าหน้าจอ */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/* CSS กล่องที่ 1 nav bar  */
+nav{
+    padding: 1rem; /*ระยะห่างรอบด้าน บน ล่าง ซ้าย ขวา */
+    background-color: #3b3b3b; /* สีพื้นหลังส่วนเมนู */
+    background: linear-gradient(#6cadd3,#034266);
+}
+
+/* คำสั่ง Container คือการสร้างกล่อง กรอบโครงสร้างกึ่งกลางของหน้าเว็บ */
+.container{
+    max-width: 1240px;  
+    /*กำหนดกรอบความกว้างตรงกลาง ตัวเลขน้อยก็บีบเข้า ตัวเลขมากขยายออก*/
+    margin: auto; 
+    /* กำหนดขอบดันออกทั้ง 4ด้าน บน ล่าง ซ้าย ขวา ปรับอัตโนมัติ*/
+    /* border: 1px solid red; */
+}
+
+.nav-con{
+    display: flex;  /* รูปแบบการแสดงผล กล่องโลโก้ และ กล่อง เมนู */
+    justify-content: space-between;  
+    /*จัดตำแหน่งแนวนอน แบบกระจายดันออกข้าง */
+}
+
+/* เข้าถึง คำสั่ง Class logo */
+.logo a{
+    font-size: 5rem;  /* กำหนดขนาดอักษร หน่วยเป็น เรม */
+    color: #fbf7f7; /* กำหนดสีอักษร  */
+    text-decoration: none; /* ไม่แสดงเส้นใต้คำสั่งลิงก์ */
+}
+
+.logo img{
+width: 150px;
+height: 150px;
+}
+
+.logo p{
+    color: #ffffff;
+}
+
+/* กำหนด CSS กล่อง เมนู */
+.menu{
+    display: flex; 
+    list-style: none;
+    
+}/* กำหนดให้เมนู เรียงเป็นแนวนอน */
+
+.menu li{
+    color: #ffffff;
+    margin: 0 2rem;
+    align-items: center;
+
+}
+
+.menu li a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+    align-items: center;
+}
+
+
+.hero{
+    background-color: #034266(221, 218, 218);
+
+}
+
+.hero-con{
+display: flex;
+
+}
+
+.hero-info{
+    width: 100%;
+    padding:  2rem;
+}
+
+.hero-info h3{
+    font-size: 2rem;
+}
+
+.hero-info p{
+    margin: 1 rem 0;
+    text-align: justify;
+}
+ 
+.hero-info .hero-btn{
+    display: inline-block;
+    background-color: #034266;
+    color:rgb(255, 255, 255);
+    padding : 1rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.hero-img img{
+    width: 80%;
+    padding: 0.5rem;
+    border-radius: 60px;
+    box-shadow: 2rem 5px 10px rgb(90, 90, 90);
+}
+
+
+/* ส่วนที่ 5 ส่วนแสดงแทบของผู้จัดทำและเป็นเจ้าของเว็บ*/
+.footer-bottom {
+    background: linear-gradient(#6cadd3,#034266);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+.blog-title{
+    margin: 1rem;
+}
+
+.blog-title h3{
+    font-weight: bold;
+    color: #034266;
+    
+}
+
+
+.blog-con{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr ;
+column-gap: 1rem;
+}
+
+
+/* ส่วนของรูปภาพที่มีกรอบอันหลัก */
+.blog-item img{
+    width: 100%;
+    border-radius: 10%;
+    border: 5px solid #034266;
+}
+
+.blog-item h4{
+    margin-top:1rem;/*ห่างขอบบนรูปภาพ */
+}
+
+.blog-item p{
+     text-align: justify; /*กระจายข้อขวามหน้าหลัง */
+}
+
+/* ปุ่มกด */
+.blog-item .blog-btn{
+    display: inline-block;
+    background-color: #034266;
+    color: wheat;
+    padding: 1rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-decoration: none;
+    margin: 1rem 0;
+
+}
